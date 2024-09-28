@@ -6,10 +6,10 @@
 		"start": "node server.js"
 	},
 	"dependencies": {
-		"express": "^4.17.1",    // Web framework for Node.js
-		"socket.io": "^4.0.0"    // Real-time communication library
+		"express": "^4.17.1",
+		"socket.io": "^4.0.0"
 	},
 	"engines": {
-		"node": ">=14.x"          // Specify the Node.js version (optional)
+		"node": ">=14.x"
 	}
 }
