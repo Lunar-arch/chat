@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(20, 20, 20);
+    margin: 0;
+    padding: 20px;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: auto;
+    background: rgb(30, 30, 30);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.messages {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.message {
+    margin: 5px 0;
+    color: white; /* Default message color */
+    transition: color 15s; /* Transition for fading */
+}
+
+/* Unread messages style */
+.unread {
+    color: rgb(255, 180, 255); /* Color for unread messages */
+    transition: color 15s;
+}
+
+#usernameInput {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    outline: 0px solid rgb(30, 30, 30);
+    color: rgb(110, 110, 110);
+    background: rgb(35, 35, 35);
+    margin-bottom: 7px;
+    transition: color 0.4s ease;
+    transition: outline 0.4s ease;
+}
+input:focus {
+    outline: 1px solid rgb(60, 60, 60);
+    color: rgb(180, 180, 180);
+}
+input::placeholder {
+    color: rgb(80, 80, 80);
+}
+
+/* Change placeholder color when the input is focused */
+input:focus::placeholder {
+    color: rgb(110, 110, 110);
+    transition: color 0.4s ease;
+}
+.input {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding-top: 5px;
+    gap: 7px; /* Space between the elements */
+    height: 40px; /* Maintain the height */
+}
+
+#messageInput {
+    flex: 2; /* This will take up 2 parts */
+    min-width: 0; /* Prevent overflow if the content is too large */
+    padding: 10px; /* Ensure padding for better aesthetics */
+}
+
+button {
+    /* Each button takes up 1 part */
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    background: rgb(80, 60, 80);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#sendButton {
+    flex: 0.2;
+}
+#saveButton {
+    flex: 0.38;
+}
+
+button:hover {
+    scale: 1.05;
+}
+.hidden {
+    display: none; /* This will hide the element */
+}
+h1 {
+    text-align: center;
+    color: rgb(160, 160, 160);
+    margin: none;
+}
+.fade-out {
+    transition: color 4s; /* Transition for fading */
+    color: white; /* Final color when fading */
+}
